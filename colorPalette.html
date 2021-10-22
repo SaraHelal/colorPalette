@@ -57,9 +57,12 @@
             container.appendChild(box);
         }
 
+        // Random index with length of the hex array
         function getRandomHexCode(){
             return Math.floor(Math.random()* hex.length);
         }
+
+        //to create hexCode of 6 digits
         function getBackgroundColor(){
             let hexCode = "#";
             for(let i =0; i<6 ; i++){
@@ -68,6 +71,7 @@
             return hexCode;
         }
 
+        // click button action to change the body of background
         function changeBackgroundColor(e){
             document.body.style.backgroundColor = e.target.style.backgroundColor;
         }
